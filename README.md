@@ -1,3 +1,3 @@
 # warmup-Aquillo
 
-A simple program for users input messages into a feed.
+A simple program for users to input messages into a feed.
