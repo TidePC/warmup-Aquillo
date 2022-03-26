@@ -1,6 +1,6 @@
 <?php
 
-require_once 'conn.php';
+	require_once 'conn.php';
 	
 	$message = $_POST['message'];
 
@@ -8,12 +8,7 @@ require_once 'conn.php';
 	
 	$query = $conn->prepare($sql);
 	
-	$query->bindParam(':message', $message);
-	
-	$query->execute();
-	
-	//reload test
-	//echo "<meta http-equiv='refresh' content='0'>";
+	$query->execute([':message' => $message]);
 	
 	echo "Success."
 

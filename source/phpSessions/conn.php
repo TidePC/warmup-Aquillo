@@ -11,12 +11,12 @@ $opt = [
 
 	try
 	{
-		$conn = new PDO("mysql:host=localhost;dbname=$name", $user, $password, $opt);		
-		require_once "read.php";		
+		$conn = new PDO("mysql:host=localhost;dbname=$name", $user, $password, $opt);
+		//echo "Database Connection Set.";
 	}
 	catch(PDOException $e)
 	{
 		echo "Connection failed: " . $e->getMessage();
 	}	
-	
+
 ?>
